@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Free Text Rewriting Tool - Rewrite content dynamically with SEO-optimised, responsive design.">
+  <meta name="keywords" content="Text Rewriting Tool, Article Spinner, SEO Tool, Content Rewriter">
+  <meta name="author" content="Your Name" />
+  <title>Free Text Rewriting Tool</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      background: #f9fafb;
+      color: #222;
+    }
+
+    header {
+      background: #2563eb;
+      color: white;
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0 0 10px;
+      font-size: 2rem;
+    }
+
+    header p {
+      margin: 0;
+      font-size: 1rem;
+      opacity: 0.9;
+    }
+
+    .container {
+      max-width: 960px;
+      margin: 2rem auto;
+      background: #ffffff;
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    }
+
+    label {
+      display: block;
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+    }
+
+    select, textarea, button {
+      width: 100%;
+      padding: 0.75rem;
+      font-size: 1rem;
+      margin-bottom: 1.5rem;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      outline: none;
+      transition: border-color 0.2s;
+    }
+
+    select:focus, textarea:focus {
+      border-color: #2563eb;
+    }
+
+    button {
+      background-color: #22c55e;
+      color: white;
+      font-weight: 600;
+      cursor: pointer;
+      border: none;
+      transition: background 0.3s;
+    }
+
+    button:hover {
+      background-color: #16a34a;
+    }
+
+    .ad-space {
+      text-align: center;
+      padding: 1rem;
+      margin: 2rem 0;
+      border: 2px dashed #ddd;
+      background: #f0fdf4;
+      border-radius: 10px;
+    }
+
+    footer {
+      background: #1f2937;
+      color: #fff;
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 1.5rem;
+      }
+
+      .container {
+        margin: 1rem;
+        padding: 1.25rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>📝 Free Text Rewriting Tool</h1>
+  <p>Rewrite content quickly with dynamic tool level optimisation</p>
+</header>
+
+<div class="container">
+  <div class="ad-space">
+    <!-- 📌 Insert your Eon Ads Code here -->
+    <p>[Top Ad Space - Eon Ads]</p>
+  </div>
+
+  <form id="rewriterForm">
+    <label for="toolLevel">Select Rewriting Level:</label>
+    <select id="toolLevel">
+      <option value="basic">Basic</option>
+      <option value="medium">Medium</option>
+      <option value="advanced">Advanced</option>
+    </select>
+
+    <label for="inputText">Enter Your Text:</label>
+    <textarea id="inputText" rows="6" placeholder="Paste your content here..."></textarea>
+
+    <button type="button" onclick="rewriteText()">🔁 Rewrite Text</button>
+
+    <label for="outputText">Rewritten Output:</label>
+    <textarea id="outputText" rows="6" readonly placeholder="Your rewritten content will appear here..."></textarea>
+  </form>
+
+  <div class="ad-space">
+    <!-- 📌 Insert your Eon Ads Code here -->
+    <p>[Bottom Ad Space - Eon Ads]</p>
+  </div>
+</div>
+
+<footer>
+  &copy; 2025 Free Text Rewriting Tool. Optimised for SEO and monetised with Eon Ads.
+</footer>
+
+<script>
+  function rewriteText() {
+    const level = document.getElementById('toolLevel').value;
+    let input = document.getElementById('inputText').value.trim();
+
+    if (!input) {
+      alert("Please enter text to rewrite.");
+      return;
+    }
+
+    let rewritten = input;
+
+    if (level === 'basic') {
+      rewritten = rewritten.replace(/\bis\b/g, 'remains');
+    } else if (level === 'medium') {
+      rewritten = rewritten.replace(/\bare\b/g, 'usually are').replace(/\bis\b/g, 'often is');
+    } else if (level === 'advanced') {
+      rewritten = rewritten
+        .replace(/\bis\b/g, 'can be interpreted as')
+        .replace(/\bare\b/g, 'are often considered to be')
+        .replace(/\bthe\b/g, 'this particular');
+    }
+
+    document.getElementById('outputText').value = rewritten;
+  }
+</script>
+
+</body>
+</html>
