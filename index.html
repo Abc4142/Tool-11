@@ -1,4 +1,98 @@
 <!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Free Online Ad Tool - Auto Rotating Responsive Ad Page" />
+  <title>Auto Rotating Ad Tool | GitHub Page</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f7f7f7;
+      color: #333;
+      text-align: center;
+    }
+    header, footer {
+      margin: 10px auto;
+      width: 100%;
+      max-width: 970px;
+      background: #fff;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      border-radius: 10px;
+      overflow: hidden;
+    }
+    iframe {
+      border: none;
+      width: 100%;
+      height: 100px;
+      transition: opacity 0.5s ease;
+    }
+    main {
+      max-width: 970px;
+      margin: 20px auto;
+      padding: 20px;
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    }
+    @media (max-width: 768px) {
+      iframe { height: 80px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- 🔹 ऊपर का Ad -->
+  <header>
+    <iframe id="topAd" src="https://brillianceremisswhistled.com/qtm5xp3h?key=fe24bdd44deba970ba6e165aab1aa30a" loading="lazy"></iframe>
+  </header>
+
+  <!-- 🔸 मुख्य कंटेंट -->
+  <main>
+    <h1>मेरे GitHub Auto Ad Tool में आपका स्वागत है</h1>
+    <p>यह एक responsive पेज है जिसमें ऊपर और नीचे के Ads हर 25 सेकंड में अपने-आप बदलते हैं।</p>
+  </main>
+
+  <!-- 🔹 नीचे का Ad -->
+  <footer>
+    <iframe id="bottomAd" src="https://otieu.com/4/9025403" loading="lazy"></iframe>
+  </footer>
+
+  <script>
+    // 🔁 Ads को हर 25 सेकंड में बदलने के लिए
+    const topAds = [
+      "https://brillianceremisswhistled.com/qtm5xp3h?key=fe24bdd44deba970ba6e165aab1aa30a",
+      "https://otieu.com/4/9025403"
+    ];
+    const bottomAds = [
+      "https://otieu.com/4/9025403",
+      "https://brillianceremisswhistled.com/qtm5xp3h?key=fe24bdd44deba970ba6e165aab1aa30a"
+    ];
+
+    let topIndex = 0;
+    let bottomIndex = 0;
+
+    setInterval(() => {
+      topIndex = (topIndex + 1) % topAds.length;
+      bottomIndex = (bottomIndex + 1) % bottomAds.length;
+
+      document.getElementById("topAd").style.opacity = 0;
+      document.getElementById("bottomAd").style.opacity = 0;
+
+      setTimeout(() => {
+        document.getElementById("topAd").src = topAds[topIndex];
+        document.getElementById("bottomAd").src = bottomAds[bottomIndex];
+        document.getElementById("topAd").style.opacity = 1;
+        document.getElementById("bottomAd").style.opacity = 1;
+      }, 500);
+    }, 25000); // 25 सेकंड
+  </script>
+
+</body>
+</html>
+
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
