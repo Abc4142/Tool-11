@@ -1,274 +1,119 @@
 <!DOCTYPE html>
 <html lang="hi">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Free Online Ad Tool - Auto Rotating Responsive Ad Page" />
-  <title>Auto Rotating Ad Tool | GitHub Page</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #f7f7f7;
-      color: #333;
-      text-align: center;
-    }
-    header, footer {
-      margin: 10px auto;
-      width: 100%;
-      max-width: 970px;
-      background: #fff;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-      border-radius: 10px;
-      overflow: hidden;
-    }
-    iframe {
-      border: none;
-      width: 100%;
-      height: 100px;
-      transition: opacity 0.5s ease;
-    }
-    main {
-      max-width: 970px;
-      margin: 20px auto;
-      padding: 20px;
-      background: white;
-      border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.05);
-    }
-    @media (max-width: 768px) {
-      iframe { height: 80px; }
-    }
-  </style>
+<meta charset="UTF-8">
+
+<title>Sachhi Tasveer Tools – Free Online Web Tools</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Sachhta Save Tools (sachhtasveertools.com) provides free, fast and reliable online tools.">
+<meta name="keywords" content="SachhiTasveer Tools, sachhtasveertools.com, free online tools">
+<meta name="author" content="Sachhi Tasveer Tools">
+
+<style>
+body{
+    margin:0;
+    font-family:Arial,Helvetica,sans-serif;
+    background:#f3f4f6;
+}
+.wrapper{
+    max-width:720px;
+    margin:70px auto;
+    background:#fff;
+    padding:30px;
+    border-radius:14px;
+    box-shadow:0 10px 25px rgba(0,0,0,.1);
+}
+h1{
+    text-align:center;
+    margin-bottom:6px;
+    color:#111827;
+}
+.domain{
+    text-align:center;
+    font-size:13px;
+    color:#2563eb;
+    margin-bottom:18px;
+}
+p{
+    text-align:center;
+    color:#555;
+}
+textarea{
+    width:100%;
+    height:120px;
+    padding:14px;
+    margin-top:20px;
+    font-size:15px;
+    border-radius:10px;
+    border:1px solid #d1d5db;
+}
+button{
+    width:100%;
+    margin-top:18px;
+    padding:14px;
+    font-size:16px;
+    background:#2563eb;
+    color:#fff;
+    border:none;
+    border-radius:10px;
+    cursor:pointer;
+}
+button:hover{
+    background:#1d4ed8;
+}
+.result{
+    margin-top:25px;
+    padding:16px;
+    background:#eef2ff;
+    border-left:5px solid #2563eb;
+    display:none;
+    border-radius:8px;
+    color:#111827;
+}
+footer{
+    margin-top:40px;
+    text-align:center;
+    font-size:13px;
+    color:#6b7280;
+}
+</style>
 </head>
+
 <body>
 
-  <!-- 🔹 ऊपर का Ad -->
-  <header>
-    <iframe id="topAd" src="https://brillianceremisswhistled.com/qtm5xp3h?key=fe24bdd44deba970ba6e165aab1aa30a" loading="lazy"></iframe>
-  </header>
+<div class="wrapper">
+    <h1>Sachhta Save Tools</h1>
+    <div class="domain">🌐 sachhtasveertools.com</div>
 
-  <!-- 🔸 मुख्य कंटेंट -->
-  <main>
-    <h1>मेरे GitHub Auto Ad Tool में आपका स्वागत है</h1>
-    <p>यह एक responsive पेज है जिसमें ऊपर और नीचे के Ads हर 25 सेकंड में अपने-आप बदलते हैं।</p>
-  </main>
+    <p>Free • Fast • Secure Online Tools</p>
 
-  <!-- 🔹 नीचे का Ad -->
-  <footer>
-    <iframe id="bottomAd" src="https://otieu.com/4/9025403" loading="lazy"></iframe>
-  </footer>
+    <textarea id="inputText" placeholder="यहाँ अपना टेक्स्ट लिखें…"></textarea>
 
-  <script>
-    // 🔁 Ads को हर 25 सेकंड में बदलने के लिए
-    const topAds = [
-      "https://brillianceremisswhistled.com/qtm5xp3h?key=fe24bdd44deba970ba6e165aab1aa30a",
-      "https://otieu.com/4/9025403"
-    ];
-    const bottomAds = [
-      "https://otieu.com/4/9025403",
-      "https://brillianceremisswhistled.com/qtm5xp3h?key=fe24bdd44deba970ba6e165aab1aa30a"
-    ];
+    <button onclick="runTool()">Run Tool</button>
 
-    let topIndex = 0;
-    let bottomIndex = 0;
-
-    setInterval(() => {
-      topIndex = (topIndex + 1) % topAds.length;
-      bottomIndex = (bottomIndex + 1) % bottomAds.length;
-
-      document.getElementById("topAd").style.opacity = 0;
-      document.getElementById("bottomAd").style.opacity = 0;
-
-      setTimeout(() => {
-        document.getElementById("topAd").src = topAds[topIndex];
-        document.getElementById("bottomAd").src = bottomAds[bottomIndex];
-        document.getElementById("topAd").style.opacity = 1;
-        document.getElementById("bottomAd").style.opacity = 1;
-      }, 500);
-    }, 25000); // 25 सेकंड
-  </script>
-
-</body>
-</html>
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <meta name="description" content="Use our Free Text Rewriting Tool to rewrite articles, improve SEO, and generate unique content instantly.">
-  <meta name="keywords" content="Text Rewriter, Article Spinner, Free Tool, SEO Rewriter, Content Generator">
-  <meta name="author" content="YourName">
-  <title>Free Text Rewriting Tool - Rewrite Content Instantly</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
-
-  <style>
-    * {
-      box-sizing: border-box;
-    }
-
-    body {
-      margin: 0;
-      font-family: 'Inter', sans-serif;
-      background: #f0f4f8;
-      color: #333;
-    }
-
-    header {
-      background: linear-gradient(to right, #2563eb, #1d4ed8);
-      color: white;
-      padding: 60px 20px;
-      text-align: center;
-    }
-
-    header h1 {
-      font-size: 2.5rem;
-      margin-bottom: 10px;
-    }
-
-    header p {
-      font-size: 1.1rem;
-      max-width: 700px;
-      margin: 0 auto;
-      opacity: 0.9;
-    }
-
-    .cta-button {
-      display: inline-block;
-      margin-top: 30px;
-      padding: 15px 30px;
-      font-size: 1rem;
-      background: #22c55e;
-      color: white;
-      border: none;
-      border-radius: 8px;
-      text-decoration: none;
-      transition: background 0.3s;
-    }
-
-    .cta-button:hover {
-      background: #16a34a;
-    }
-
-    .features {
-      max-width: 1100px;
-      margin: 60px auto;
-      padding: 0 20px;
-      text-align: center;
-    }
-
-    .features h2 {
-      font-size: 2rem;
-      margin-bottom: 30px;
-      color: #1e40af;
-    }
-
-    .grid {
-      display: grid;
-      gap: 30px;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    }
-
-    .feature-card {
-      background: white;
-      padding: 25px;
-      border-radius: 10px;
-      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
-    }
-
-    .feature-card h3 {
-      margin-bottom: 10px;
-      color: #2563eb;
-    }
-
-    .feature-card p {
-      font-size: 0.95rem;
-      color: #555;
-    }
-
-    .ad-space {
-      margin: 50px auto;
-      max-width: 960px;
-      padding: 30px;
-      background: #fefce8;
-      border: 2px dashed #eab308;
-      text-align: center;
-      border-radius: 10px;
-      color: #92400e;
-    }
-
-    footer {
-      background: #1f2937;
-      color: white;
-      padding: 20px;
-      text-align: center;
-      font-size: 0.9rem;
-    }
-
-    @media (max-width: 600px) {
-      header h1 {
-        font-size: 1.8rem;
-      }
-
-      .cta-button {
-        padding: 12px 25px;
-        font-size: 0.95rem;
-      }
-    }
-  </style>
-</head>
-<body>
-
-<header>
-  <h1>🚀 <a href="/Tool-11/img.rewriting.html" style="text-decoration: none; color: inherit;">Free Text Rewriting Tool</a></h1>
-  <p>Rewrite your content instantly with smart optimisation levels – perfect for bloggers, marketers, and students!</p>
-  <a href=",/Tool-11/img.rewriting.html" class="cta-button">🔁 Launch the Rewriting Tool</a>
-</header>
-  <div class="container">
-  <div class="ad-space">
-    <!-- 📌 Insert your Eon Ads Code here -->
-    <p> 
-<a href="https://www.eonads.com" class="ex1" target="_blank">Ads by Eonads</a>
-<ins class="e728x90" id="728x90" data-revive-hash="b26369331a0c243b74134c27d3e93c93" data-revive-zoneid="64344" data-revive-id="f87497be83f6ed6b52c3b340d803ae0d"></ins>
-<script async src="//network.eonads.com/adserver/www/delivery/asyncjs.php"></script><!-- ads by Eonads -->
-                      </p>
-
-<section class="features">
-  <h2>✨ <a href="/Tool-11/img.rewriting.html" style="text-decoration: none; color: inherit;">Why Use This Tool?</a></h2>
-  <div class="grid">
-    <div class="feature-card">
-      <h3><a href="/Tool-11/img.rewriting.html" style="text-decoration: none; color: inherit;">Free to Use</a></h3>
-      <p>No registration or cost. Rewrite unlimited text with no hidden charges.</p>
-    </div>
-    <div class="feature-card">
-      <h3><a href="/Tool-11/img.rewriting.html" style="text-decoration: none; color: inherit;">Level Selector</a></h3>
-      <p>Choose between Basic, Medium or Advanced to suit your rewriting needs.</p>
-    </div>
-    <div class="feature-card">
-      <h3><a href="/Tool-11/img.rewriting.html" style="text-decoration: none; color: inherit;">SEO Optimised</a></h3>
-      <p>Generate SEO-friendly rewritten content that ranks better on search engines.</p>
-    </div>
-    <div class="feature-card">
-      <h3><a href="/Tool-11/img.rewriting.html" style="text-decoration: none; color: inherit;">Responsive Design</a></h3>
-      <p>Access your tool on mobile, tablet, or desktop seamlessly.</p>
-    </div>
-  </div>
-</section>
-
-
-<div class="ad-space">
-  <!-- 📌 Insert your Eon Ads Code here -->
-  <p> 
-<a href="https://www.eonads.com" class="ex1" target="_blank">Ads by Eonads</a>
-<ins class="e728x90" id="728x90" data-revive-hash="b26369331a0c243b74134c27d3e93c93" data-revive-zoneid="64344" data-revive-id="f87497be83f6ed6b52c3b340d803ae0d"></ins>
-<script async src="//network.eonads.com/adserver/www/delivery/asyncjs.php"></script><!-- ads by Eonads -->
-                      </p>
+    <div class="result" id="resultBox"></div>
 </div>
 
 <footer>
-  &copy; 2025 Free Text Rewriting Tool. Designed for performance, SEO and monetisation with Eon Ads.
+    © 2026 Sachhta Save Tools – All Rights Reserved
 </footer>
+
+<script>
+function runTool(){
+    const text = document.getElementById("inputText").value.trim();
+
+    if(text === ""){
+        alert("कृपया पहले टेक्स्ट डालें");
+        return;
+    }
+
+    document.getElementById("resultBox").style.display="block";
+    document.getElementById("resultBox").innerText =
+        "आपका Result:\n\n" + text;
+}
+</script>
 
 </body>
 </html>
+
